@@ -1,0 +1,6 @@
+from izi_grpc.app import BaseApp
+
+
+class App(BaseApp):
+
+    pass

@@ -1,0 +1,15 @@
+language: python
+cache: pip
+services:
+  - redis-server
+python:
+  - "3.5"
+  - "3.6"
+install:
+  - pip install -r test-requirements.txt -U
+script:
+  - flake8 izi_grpc --exclude=*_pb2.py
+  - pytest tests
+after_success:
+  - CODECLIMATE_REPO_TOKEN=19c5e18e184070a726bb6fc703e321e526ca638df16f9623654044bcccdb1a9d codeclimate-test-reporter
+  - coveralls

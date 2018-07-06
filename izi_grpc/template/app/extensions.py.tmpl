@@ -1,0 +1,25 @@
+{%- if not skip_peewee -%}
+from peeweext.izi_grpc import Peeweext
+{% endif %}
+{%- if not skip_cache -%}
+from cachext.exts import Cache
+{% endif %}
+{%- if not skip_celery -%}
+from izi_grpc.contrib.extensions.celery import Celery
+{% endif %}
+{%- if not skip_sentry -%}
+from izi_grpc.contrib.extensions.sentry import Sentry
+{% endif %}
+
+{%- if not skip_peewee -%}
+pwx = Peeweext()
+{% endif %}
+{%- if not skip_cache -%}
+cache = Cache()
+{% endif %}
+{%- if not skip_celery -%}
+celeryapp = Celery()
+{% endif %}
+{% if not skip_sentry -%}
+sentry = Sentry()
+{% endif -%}
