@@ -32,7 +32,7 @@ def console():
 
 @jobm.job('generate', aliases=['g'], inapp=False, help='Generate RPC')
 @jobm.option('-I', '--proto_path', required=True, action='append',
-             help="the dir in which we'll izi_grpcrch the proto files")
+             help="the dir in which we'll search the proto files")
 @jobm.option('protos', nargs='+',
              help='the proto files which will be compiled.'
              'the paths are related to the path defined in "-I"')

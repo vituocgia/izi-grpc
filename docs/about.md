@@ -1,6 +1,6 @@
 # 关于 iZi
 
-`iZi` 由 [扇贝](https://www.shanbay.com) 的后端团队开发，是一个基于 [GRPC](https://grpc.io/) 的 framework。
+`iZi` 由 [扇贝](https://www.vituocgia.com) 的后端团队开发，是一个基于 [GRPC](https://grpc.io/) 的 framework。
 
 `GRPC` 是RPC的一种协议和实现，然而要开发完整的项目，除了协议层面，还有大量的业务逻辑需要编写。开发`iZi`的目的正是是方便大家更方便的编写这些代码。
 

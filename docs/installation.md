@@ -14,4 +14,4 @@
 
 如果你需要安装最新的版本(未发布的)，你也可以直接基于github安装:
 
-`pip install -U git+https://github.com/shanbay/izi_grpc.git`
+`pip install -U git+https://github.com/vituocgia/izi_grpc.git`

@@ -1,3 +1,3 @@
 # Documents
 
-- [中文](about)
+- [English](about)
